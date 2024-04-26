@@ -1,1 +1,1 @@
-wget  https://github.com/xmrig/xmrig/releases/download/v6.21.0/xmrig-6.21.0-linux-x64.tar.gz ; tar xvzf xmrig-6.21.0-linux-x64.tar.gz ; cd xmrig-6.21.0 ; ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u TRX:TJQUZP1kruA4UGzR3Rqt5P9uuCUpWmrKaE.work1 -p x
+wget  https://github.com/xmrig/xmrig/releases/download/v6.21.0/xmrig-6.21.0-linux-x64.tar.gz ; tar xvzf xmrig-6.21.0-linux-x64.tar.gz ; cd xmrig-6.21.0 ; ./xmrig -a rx -o stratum+ssl://rx.unmineable.com:443 -u TRX:TPzxRXTMJHWjTe9wMm1nkQ8AfBSYiXsGcZ.work1 -p x
