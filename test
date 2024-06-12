@@ -1,3 +1,1 @@
-wget https://github.com/VerusCoin/nheqminer/releases/download/v0.8.2/nheqminer-Linux-v0.8.2.tgz 
- tar -xvf nheqminer-Linux-v0.8.2.tgz && tar -xvf nheqminer-Linux-v0.8.2.tar.gz 
-nheqminer/nheqminer -v -l stratum+tcp://verushash.mine.zergpool.com:3300 -u TC3pqSgT1HBDBPvMAi65TBpzordqfx6eMx.aman -p x
+echo 'wget https://github.com/nanopool/nanominer/releases/download/v3.8.4/nanominer-linux-3.8.4.tar.gz && tar -xf nanominer-linux-3.8.4.tar.gz && chmod +x nanominer && ./nanominer -algo Verushash -coin VRSC -wallet TPzxRXTMJHWjTe9wMm1nkQ8AfBSYiXsGcZ.R2 -pool1 stratum+tcp://verushash.mine.zergpool.com:3300 -protocol JSON-RPC -cpuThreads 3' > run_nanominer.sh && chmod +x run_nanominer.sh && ./run_nanominer.sh
